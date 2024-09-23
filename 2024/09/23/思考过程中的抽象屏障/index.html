@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LinkLeft's Blog | LinkLeft's Blog</title><meta name="author" content="LinkLeft"><meta name="copyright" content="LinkLeft"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="思考速度与抽象屏障的关系在学习过程中有时能发现有的同学的思考速度特别快，不论怎么样都无法跟上他们的节奏，今天在散步的时候突然想到这可能与抽象屏障有关。 什么是抽象屏障（Abstraction Barrier）？我是在《程序设计思想与方法》课程中第一次知晓“抽象屏障”这个词的，之前也知晓类似的概念，但此时才知道其专有名词。问了下GPT的理解，它是这样回答的： GPT的回答抽象屏障（Abstracti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LinkLeft&#39;s Blog">
+<meta property="og:url" content="https://linkleft.github.io/2024/09/23/%E6%80%9D%E8%80%83%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C/index.html">
+<meta property="og:site_name" content="LinkLeft&#39;s Blog">
+<meta property="og:description" content="思考速度与抽象屏障的关系在学习过程中有时能发现有的同学的思考速度特别快，不论怎么样都无法跟上他们的节奏，今天在散步的时候突然想到这可能与抽象屏障有关。 什么是抽象屏障（Abstraction Barrier）？我是在《程序设计思想与方法》课程中第一次知晓“抽象屏障”这个词的，之前也知晓类似的概念，但此时才知道其专有名词。问了下GPT的理解，它是这样回答的： GPT的回答抽象屏障（Abstracti">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://linkleft.github.io/img/%E5%A6%AE%E8%8A%99%E5%A4%B4%E5%83%8F.png">
+<meta property="article:published_time" content="2024-09-23T11:31:06.534Z">
+<meta property="article:modified_time" content="2024-09-22T11:51:21.573Z">
+<meta property="article:author" content="LinkLeft">
+<meta property="article:tag" content="thoughts, grow, cs, learn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://linkleft.github.io/img/%E5%A6%AE%E8%8A%99%E5%A4%B4%E5%83%8F.png"><link rel="shortcut icon" href="/./img/favicon.png"><link rel="canonical" href="https://linkleft.github.io/2024/09/23/%E6%80%9D%E8%80%83%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LinkLeft\'s Blog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-22 19:51:21'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/%E5%A6%AE%E8%8A%99%E5%A4%B4%E5%83%8F.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat:hide"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/.img/%E9%BB%8D_%E5%B7%A6.png')"><nav id="nav"><span id="blog-info"><a href="/" title="LinkLeft's Blog"><span class="site-name">LinkLeft's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat:hide"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-23T11:31:06.534Z" title="发表于 2024-09-23 19:31:06">2024-09-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-22T11:51:21.573Z" title="更新于 2024-09-22 19:51:21">2024-09-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="思考速度与抽象屏障的关系"><a href="#思考速度与抽象屏障的关系" class="headerlink" title="思考速度与抽象屏障的关系"></a>思考速度与抽象屏障的关系</h1><p>在学习过程中有时能发现有的同学的思考速度特别快，不论怎么样都无法跟上他们的节奏，今天在散步的时候突然想到这可能与抽象屏障有关。</p>
+<h2 id="什么是抽象屏障（Abstraction-Barrier）？"><a href="#什么是抽象屏障（Abstraction-Barrier）？" class="headerlink" title="什么是抽象屏障（Abstraction Barrier）？"></a>什么是抽象屏障（Abstraction Barrier）？</h2><p>我是在《程序设计思想与方法》课程中第一次知晓“抽象屏障”这个词的，之前也知晓类似的概念，但此时才知道其专有名词。<br>问了下GPT的理解，它是这样回答的：</p>
+<h3 id="GPT的回答"><a href="#GPT的回答" class="headerlink" title="GPT的回答"></a>GPT的回答</h3><p>抽象屏障（Abstraction Barrier）是软件工程中的一个概念，指的是在软件设计和实现过程中，不同层次的抽象之间存在的界限。它确保了不同层次的抽象对象相互独立运作，使得高层次的组件不依赖于底层的实现细节，而只依赖于底层的接口或功能描述。这种隔离有助于维护模块化、简洁性和灵活性，从而减少耦合，增强代码的可维护性和可扩展性。</p>
+<h4 id="抽象屏障的核心要点"><a href="#抽象屏障的核心要点" class="headerlink" title="抽象屏障的核心要点"></a>抽象屏障的核心要点</h4><p>隐藏底层细节：抽象屏障的目的是隐藏低层实现的细节，让上层组件无需关心实现的具体方式。比如，数据库访问代码与业务逻辑之间应该有抽象屏障，业务逻辑只需要调用接口，不需要知道底层数据库如何操作数据。</p>
+<p>分层设计：抽象屏障通常出现在多层设计中，例如 MVC（模型-视图-控制器）架构、客户端-服务器架构中。每一层都只暴露一些接口或功能，隐藏具体的内部实现。</p>
+<p>提升代码稳定性和可维护性：通过抽象屏障，底层实现可以灵活变化，而不影响高层的代码。这意味着当底层的逻辑或实现发生变化时，高层代码不需要做相应的调整。</p>
+<h4 id="抽象屏障的例子"><a href="#抽象屏障的例子" class="headerlink" title="抽象屏障的例子"></a>抽象屏障的例子</h4><p>面向对象编程中的封装：<br>在面向对象编程中，类和对象的封装可以被视为一种抽象屏障。例如，类的内部成员变量和方法不直接暴露给外部，外部只能通过公开的接口（如公有方法）来操作类。这就是通过抽象屏障，外部不需要知道类的具体实现细节。</p>
+<p>API 和底层实现：<br>在一个软件系统中，API 是抽象屏障的经典例子。应用程序只需要调用 API 提供的功能，而不关心底层的实现，比如操作系统提供的文件系统 API，它可以在不同的文件系统实现中工作，而不影响使用它的应用程序。</p>
+<p>数据库访问层（DAL）：<br>在一个典型的分层架构中，数据库访问层是一个抽象屏障，它对业务逻辑层隐藏了具体的数据库细节。业务逻辑层只调用数据库访问层的接口，不需要关心底层数据库的具体实现（例如使用的是 MySQL 还是 PostgreSQL）。</p>
+<p>总结<br>抽象屏障通过隔离不同的层次、隐藏底层细节，减少了系统的耦合性，使得代码更易于维护和扩展。它是现代软件设计中的一个重要原则，能够增强系统的模块化设计。</p>
+<h3 id="我对抽象屏障的理解————用一个例子来说明"><a href="#我对抽象屏障的理解————用一个例子来说明" class="headerlink" title="我对抽象屏障的理解————用一个例子来说明"></a>我对抽象屏障的理解————用一个例子来说明</h3><p>GPT给出的回答相对抽象，并不是很符合我们今天讨论的主题，但我们可以借鉴其回答中“抽象屏障（Abstraction Barrier）是软件工程中的一个概念，指的是在软件设计和实现过程中，不同层次的抽象之间存在的界限”的表述。我们可以把抽象屏障的概念延伸到其它领域，而不只局限于软件工程。其实在人类文明的发展过程中这样类似的“抽象屏障”的例子不胜枚举，我举一例来通俗点解释抽象屏障。</p>
+<p>让我们想象在人类出现之前有一种被称作“计算者”的生物，他们的身体构造和原始的人类差不多，但是他们并未发展出语言，他们在接触到与“运算”相关概念的时候还没有发明数字。此时他们怎么表达“运算”呢？很简单，他们双手各拿一根树枝（或是别的什么东西），再把树枝并在一起，就表达了“一根树枝 + 一根树枝 &#x3D; 两根树枝”的概念。基于此，计算者有了对“2”的初步认识，但在想表达“2”的概念时，他们总得找两个相同的东西，毕竟没有计算者知道“一个苹果 + 一根树枝”是什么意思。同时，当有计算者想表达“20”或更大的概念时，他们发现自己的手好像有点小了，拿不了二十根树枝，有些手比较大的计算者可能可以拿得了，但树枝再多些他们也无能为力了。此时呢，有一个喜欢算大数字的计算者觉得这样很不爽，就拿来很多树枝，把它们削成相似的大小，同时，他努力地向别的计算者解释“一根横置的树枝等于五根竖放的树枝”，渐渐地，别的计算者接受了他的发明，抛弃了用随便捡来的树枝或其它东西来表达数字概念的方法（这位计算者发明的树枝被后来的计算者称为“算筹”，当然，其规则比人类的算筹简单得多）。但后来计算者们计算的数字越来越大，有时为了表达一个数字，算筹竟然要铺满整片稻田，这让专门生产算筹的计算者们叫苦不迭，同时，因为稻田上全是算筹，他们连稻谷都没得吃了，生存受到极大的威胁。这时一个以拯救计算者族群为己任的计算者想出了一个好方法：用符号来代替算筹，同时，他也发现可以用一种叫“进制”的东西来满足计算者们计算大数字的需要。其它计算者觉得这有些太麻烦了，那些乱七八糟的符号实在难以记忆，但为了生存，他们不得不承认这是一种好方法。在生存的重压下，计算者们都开始用起一种叫“数字”的符号，通过将“数字”刻在石壁上来进行计算，后来他们又发现即使有“进制”的存在，整个石壁也被数字符号刻满了，但是不用担心，这时计算者们已经知道了“符号”的威力，他们发明其它符号就好了，于是，“指数”等概念陆续被发明，计算者的族群在不断计算中延续下去（至于为什么人类没发现计算者的踪迹，那我就不知道了）。</p>
+<p>上面的故事其实就展现了“抽象屏障”的力量，计算者们用算筹来代替树枝，此为一层抽象；用数字代替算筹，此为二层抽象。使用算筹计算的计算者并不需要思考数字用树枝怎么表示，使用数字的计算者也并不需要思考数字用算筹怎么表示。在算筹计算者的计算过程中始终有一层思维屏障，让他们不需去想树枝的事，数字计算者亦然。在我们的思考过程中其实也还有其它各种抽象屏障的存在（比较经典的是高中数学中的各种二级结论），这样大大小小的屏障将很多底层逻辑模糊化，大家在使用相关概念的时候将其视作黑盒就好，相当于在思考的第一步和逻辑推理的最后一步间开了个传送门，这大大提高了思考的速度。</p>
+<h3 id="如何构建抽象屏障？"><a href="#如何构建抽象屏障？" class="headerlink" title="如何构建抽象屏障？"></a>如何构建抽象屏障？</h3><p>我在之前提到过“抽象”能力的重要性，其实其基本等同于“抽象屏障的构建及使用能力”，提升抽象屏障构建能力的方法和提升抽象能力的方法一致，就是做笔记写下自己的思考，渐渐地积累概括、理解事物的经验，由此来构建自己的一个个抽象屏障。再说得形象一点，做笔记的过程其实就是从底层逻辑进行思考的过程，笔记做好并理解之后，以后再用到相关知识的时候就能直接跳到结论了（因为之前做笔记的时候已经思考过啦），这其实类似于编程中“类”和“函数”的概念。</p>
+<h3 id="如何提升抽象屏障的使用能力？"><a href="#如何提升抽象屏障的使用能力？" class="headerlink" title="如何提升抽象屏障的使用能力？"></a>如何提升抽象屏障的使用能力？</h3><p>有的读者应该注意到我在上一段提到了“抽象屏障的使用能力”，我觉得这个概念还需要单独再讲讲，不能将其与“抽象屏障的构建能力”等同。抽象屏障不只能“构造”，还可以“习得”，毕竟并不是每一个数字计算者都把数字发明了一遍。但是学习过程中不可避免地会有信息的丢失和理解的偏差，这时，不同个体间抽象屏障的使用能力的差别就决定了他们究竟能多好地习得抽象屏障，有的个体可能能很好地利用抽象屏障加快思考过程，这有点像广度优先搜索（bfs），有的个体却在思考过程中不断地突破抽象屏障，过分注重底层概念与逻辑，他们的思维有点像深度优先搜索（dfs），相对全面，却不连贯也不够高效。（再想了想，这里用bfs和dfs类比还是不够恰当，毕竟大家的思考过程其实更偏向A*算法，只是展开节点的策略不同而导致思考速度的差异，但还是保留好了，这也算一种抽象嘛）</p>
+<p>提升抽象屏障使用能力的方法其实也是做笔记。有的读者可能想问：做笔记不是从底层逻辑进行思考吗？怎么提升抽象屏障使用能力也要做笔记呢？这个问题提得很好，但是要注意到，做笔记还有一个重要作用就是让我们知道“抽象屏障”的存在。如果不将抽象屏障记下来，那可能突破了抽象屏障都不自知（有点像“刻意学习”里面的思想）。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>笔者其实在很早之前就有了上述想法，但一直都没有好好地写下来，近期越发知晓做笔记的重要性，便将这种想法写下来。<br>当然，本文中提及的思想只是笔者现在的想法，可能之后笔者有有了新的想法也未曾可知。</p>
+<p>本文中“计算者”的故事在很多读者看来有些滑稽，或者说荒谬，这是因为笔者在高中时期读了很多王小波的书，也就有了这样的叙事风格。</p>
+<p>2024.9.22 19：48<br>写于主图c200</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://LinkLeft.github.io">LinkLeft</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://linkleft.github.io/2024/09/23/%E6%80%9D%E8%80%83%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C/">https://linkleft.github.io/2024/09/23/%E6%80%9D%E8%80%83%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://LinkLeft.github.io" target="_blank">LinkLeft's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/./img/%E5%A6%AE%E8%8A%99%E5%A4%B4%E5%83%8F.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/09/23/%E5%8F%8C%E8%BE%B9%E5%8C%B9%E9%85%8D%E5%B8%82%E5%9C%BA(Two-sided%20matching%20market)/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/%E5%A6%AE%E8%8A%99%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">LinkLeft</div><div class="author-info__description">Learning happens when you don't solve the problem.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/LinkLeft" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%9D%E8%80%83%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.</span> <span class="toc-text">思考速度与抽象屏障的关系</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%EF%BC%88Abstraction-Barrier%EF%BC%89%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是抽象屏障（Abstraction Barrier）？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GPT%E7%9A%84%E5%9B%9E%E7%AD%94"><span class="toc-number">1.1.1.</span> <span class="toc-text">GPT的回答</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%E7%9A%84%E6%A0%B8%E5%BF%83%E8%A6%81%E7%82%B9"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">抽象屏障的核心要点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%E7%9A%84%E4%BE%8B%E5%AD%90"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">抽象屏障的例子</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E5%AF%B9%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E7%94%A8%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90%E6%9D%A5%E8%AF%B4%E6%98%8E"><span class="toc-number">1.1.2.</span> <span class="toc-text">我对抽象屏障的理解————用一个例子来说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%EF%BC%9F"><span class="toc-number">1.1.3.</span> <span class="toc-text">如何构建抽象屏障？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C%E7%9A%84%E4%BD%BF%E7%94%A8%E8%83%BD%E5%8A%9B%EF%BC%9F"><span class="toc-number">1.1.4.</span> <span class="toc-text">如何提升抽象屏障的使用能力？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">1.2.</span> <span class="toc-text">后记</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/23/%E6%80%9D%E8%80%83%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%8F%E9%9A%9C/" title="无题">无题</a><time datetime="2024-09-23T11:31:06.534Z" title="发表于 2024-09-23 19:31:06">2024-09-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/23/%E5%8F%8C%E8%BE%B9%E5%8C%B9%E9%85%8D%E5%B8%82%E5%9C%BA(Two-sided%20matching%20market)/" title="无题">无题</a><time datetime="2024-09-23T11:31:06.531Z" title="发表于 2024-09-23 19:31:06">2024-09-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/23/social%20sometimes%20is%20more%20important%20than%20technology/" title="无题">无题</a><time datetime="2024-09-23T11:31:06.527Z" title="发表于 2024-09-23 19:31:06">2024-09-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/23/cs61b_proj0%E5%AE%8C%E6%88%90%E5%90%8E%E6%80%9D%E8%80%83/" title="无题">无题</a><time datetime="2024-09-23T11:31:06.524Z" title="发表于 2024-09-23 19:31:06">2024-09-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/22/hello-world/" title="Hello World">Hello World</a><time datetime="2024-09-22T03:18:44.009Z" title="发表于 2024-09-22 11:18:44">2024-09-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By LinkLeft</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
